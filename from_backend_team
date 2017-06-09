@@ -1,0 +1,62 @@
+FROM BACKEND TEAM
+
+API
+
+-------------------------------
+Get All Orders
+
+GET request to /coffee_orders_ajax/api/orders/read.php
+
+Sample response:
+[
+	{
+		id: "1",
+		name: "James",
+		drink: "Coffee"
+	},
+	{
+		id: "2",
+		name: "John",
+		drink: "Latte"
+	},
+	{
+		id: "3",
+		name: "Wiz",
+		drink: "Weed Juice"
+	}
+]
+
+------------------------------
+Add an Order
+
+POST request to /coffee_orders_ajax/api/orders/create.php
+Type: JSON
+
+Sample Post: 
+{
+	name: 'Wiz',
+	drink: 'Coffee Weed'
+}
+
+-------------------------------
+Update an Order
+
+PUT requrest to /coffee_orders_ajax/api/orders/update.php
+Type: JSON
+
+Sample Post:
+{
+	id: 1,
+	name: 'James',
+	drink: 'Coffee Biatch'
+}
+
+-------------------------------
+Delete an Order
+
+DELETE request to /coffee_orders_ajax/api/orders/delete.php
+
+Sample Post:
+{
+	id: 1
+}
